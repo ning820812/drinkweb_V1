@@ -1,3 +1,10 @@
+mixin nav-a(img, textZH, textEN)
+    a(href="#")
+        img(src="img/" + img + ".png" alt="連結 縮圖")
+        span=textZH
+        br
+        span=textEN
+
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -9,6 +16,11 @@ html(lang="zh")
 
         header
             div(id="logo") LION SUGAR
-            br
-            span 獅子糖黑糖專賣
-            
+                br
+                span 獅子糖黑糖專賣
+            nav
+                +nav-a("home", "關於我們", "ABOUT")
+                +nav-a("location", "全球據點", "LOCATIONS")
+                +nav-a("hot", "熱門經典", "CLASSICAL")
+                +nav-a("contact", "加盟專線", "FRANCHISEE")
+
