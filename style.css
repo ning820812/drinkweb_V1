@@ -1,4 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #nav {
-  background-color: #999;
+  background-color: #0c1219;
+  color: #ffe282;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+}
+
+#nav a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
